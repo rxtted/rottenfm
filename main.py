@@ -219,10 +219,13 @@ while True:
             {
                 "application_id": config.DISCORD_CLIENT_ID,
                 "type": 2,
-                "state": CurrentTrack.album,
+                "state": CurrentTrack.album • via rotted.io,
                 "details": CurrentTrack.title,
                 "assets": {
                     "large_image": CurrentTrack.image_url,
+                    "large_text": f"{CurrentTrack.album} by {CurrentTrack.artist}",
+                    "small_image": "rotted_logo",
+                    "small_text": "RottenFM",
                 },
                 "timestamps": {
                     "start": CurrentTrack.started_at * 1000,
