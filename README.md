@@ -1,3 +1,5 @@
+This is a lightly customised fork of navicord, full code-base credit goes to the original contributors.
+
 # Navicord
 
 [![Docker Image](https://badgen.net/badge/docker/navicord?icon=docker&color=blue)](https://hub.docker.com/r/logixism/navicord/tags)
