@@ -1,8 +1,14 @@
 services:
-  navicord:
+  rottenfm:
+    container_name: rottenfm
+    image: ghcr.io/rxtted/rottenfm:latest
     restart: unless-stopped
-    build:
-      context: .
-      dockerfile: Dockerfile
-    env_file:
-      - .env
+    environment:
+      DISCORD_CLIENT_ID: ""
+      DISCORD_TOKEN: ""
+      LASTFM_API_KEY: ""
+      NAVIDROME_SERVER: ""
+      NAVIDROME_USERNAME: ""
+      NAVIDROME_PASSWORD: ""
+      ACTIVITY_NAME: ""
+      POLLING_TIME: ""
